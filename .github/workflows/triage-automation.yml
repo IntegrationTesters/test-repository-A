@@ -25,6 +25,6 @@ jobs:
       - name: check and comment issue
         run: python3 main.py
         env:
-          GH_TOKEN: ${{ secrets.TRIAGE_TOKEN }}
+          GH_TOKEN: ${{ secrets.TRIAGE_TOKEN_2 }}
           GH_REPO: ${{ github.repository }}
           ISSUE: ${{ github.event.issue.number }}

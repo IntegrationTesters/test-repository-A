@@ -10,11 +10,11 @@ jobs:
       issues: write
     steps:
       - name: pull in script
-        uses: actions/checkout@latest
+        uses: actions/checkout@4.2.2
         with:
           repository: IntegrationTesters/triage-scripts
       - name: install python
-        uses: actions/setup-python@latest # v5.4.0
+        uses: actions/setup-python@5.4.0 # v5.4.0
         with:
           python-version: '3.12'
           cache: 'pip'
